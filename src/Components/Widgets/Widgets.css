@@ -1,0 +1,10 @@
+.widgets{
+    --innerBorder: 15px;
+    position: fixed;
+    inset: var(--innerBorder);
+    z-index: 2;
+    pointer-events: none;
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 10px;
+}

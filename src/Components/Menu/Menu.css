@@ -1,0 +1,102 @@
+/* Menu */
+.menu{
+    position: absolute;
+    z-index: 4;
+    background-color: var(--flMenuBackground);
+    width: 125px;
+    flex-direction: column;
+    font-size: 11px;
+    font-family: sans-serif;
+    border: solid black 2px;
+    display: flex;
+    box-sizing: content-box;
+    border: none;
+    display: none;
+}
+
+.menu .options.button:hover .extra_option{
+    display: block;
+}
+
+.menu .extra_option{
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 125px;
+    height: fit-content;
+    transform: translateX(100%);
+    background-color: var(--flMenuBackground);
+    border-left: 1px solid black;
+    display: none;
+}
+
+.menu hr.separator{
+    border: none;
+    height: 1px;
+    background-color: rgba(0, 0, 0, 0.206);
+    margin-block: 0.4em;
+}
+
+.menu .button{
+    text-align: left;
+    display: flex;
+    align-items: center;
+    height: 20px;
+}
+
+.menu .button .text{
+    transform: translateX(0px);
+    transition: transform 0.2s ease-out;
+}
+
+.menu .button:hover > span.text {
+    color: white;
+    transform: translateX(1px);
+    transition: transform 0.4s ease-out;
+}
+
+.menu .button:hover span.options_open {
+    color: rgba(255, 255, 255, 0.585);
+}
+
+.menu .button:hover{
+    background-color: #5d6b74;
+}
+
+.menu .button.options {
+    justify-content: space-between;
+}
+
+.menu .button.options span.options_open{
+    transform: scaleY(2.3) scale(0.8) translateX(-5px);
+    display: inline-block;
+    text-align: left;
+    font-weight: 300;
+}
+
+.menu .button.toggle{
+    align-items: center;
+}
+
+.menu .button.toggle span.checkmark{
+    color: #9ea1a6;
+    margin-inline: 0.4em;
+}
+
+.menu .button:not(.toggle) span{
+    padding-left: 1.6em;
+}
+
+.extra_option > .action.button.disabled {
+    color: rgb(136, 136, 136);
+    pointer-events: none;
+
+    &:hover{
+        background-color: inherit;
+    }
+
+    &:hover > span.text{
+        color: rgb(136, 136, 136);
+        transform: translateX(0px);
+    }
+}

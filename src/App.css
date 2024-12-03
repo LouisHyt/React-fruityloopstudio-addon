@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;700&family=Roboto:wght@100;300;400&display=swap');
+
+@font-face {
+    font-family: 'Affirmative';
+    src: url('/Affirmative.otf') format("opentype");
+}
+
+
+:root{
+    --accentColor: rgb(38, 52, 60);
+    --semiAccentColor: rgb(41, 55, 65);
+    --backgroundColor: rgb(45,58,67);
+    --lighterColor: rgb(57, 73, 84);
+    --hoverColor: rgb(48, 62, 71);
+    --flMenuBackground: #bbc4c9;
+}
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    user-select: none;   
+}
+
+html{
+    --ratio: calc(100vh / 100vh);
+}
+
+body{
+    height: 100vh;
+    --bigSquareSize: calc(100vh / 11);
+    overflow: hidden;
+}
+
+.container{
+    height: 100vh;
+    width: 100vw;
+    overflow: hidden;
+}
