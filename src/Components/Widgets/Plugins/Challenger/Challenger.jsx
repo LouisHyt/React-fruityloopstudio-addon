@@ -20,7 +20,7 @@ const Challenger = () => {
   const constraintOptions = ['with', 'without'];
 
   const handleStartChallenge = () => {
-    // Add challenge start logic here
+    
   };
 
   const handleGenreClick = (genre) => {
