@@ -11,7 +11,7 @@ npm install
 npm run dev
 ```
 
-Then, open [http://localhost:5173](http://localhost:3008/) to see the website!
+Then, open [http://localhost:3008](http://localhost:3008/) to see the website!
 
 ---
 
